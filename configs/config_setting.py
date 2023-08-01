@@ -19,9 +19,9 @@ class setting_config:
 
     datasets = 'isic17' 
     if datasets == 'isic18':
-        data_path = './data/isic2018/'
+        data_path = './data/'
     elif datasets == 'isic17':
-        data_path = './data/isic2017/'
+        data_path = './data/'
     else:
         raise Exception('datasets in not right!')
 
@@ -29,8 +29,8 @@ class setting_config:
 
     pretrained_path = './pre_trained/'
     num_classes = 1
-    input_size_h = 256
-    input_size_w = 256
+    input_size_h = 128
+    input_size_w = 128
     input_channels = 3
     distributed = False
     local_rank = -1
